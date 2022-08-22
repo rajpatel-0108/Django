@@ -1,0 +1,14 @@
+{% extends "reviews/base.html" %}
+
+{% block title %}All Reviews{% endblock title %}
+{% block content %}
+    <ul>
+        {% comment %} This is used for Template View {% endcomment %}
+        {% comment %} {% for review in reviews  %}
+            <li> {{ review.user_name }} (Rating: {{ review.rating }}) </li>
+        {% endfor %} {% endcomment %}
+        {% for review in object_list  %}
+            <li> {{ review.user_name }} (Rating: {{ review.rating }}) </li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
