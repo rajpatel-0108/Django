@@ -1,6 +1,6 @@
 It contains:-
               GET, POST, PUT, PATCH, DELETE
               Function View Api
-              Serializers
+              Model Serializers
               Api decorators
               admin decorators
